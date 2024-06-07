@@ -4,14 +4,15 @@
     align-items: center;
     justify-content: center;
 }
-.contact-section-details{
+.contact-details{
     margin-top: 1rem;
     width: 80vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
 }
 .contact-socials{
-    padding:3rem 2rem;
+    padding:.5rem 2rem;
 }
 .contact-socials h3{
     text-transform: capitalize;
@@ -19,13 +20,23 @@
     text-align: center;
 }
 .contact-socials-items{
+    padding: .4rem 0;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.social-item{
+    font-size: 30px;
+}
+.contact-addresses{
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
 }
-.social-item{
+.address-item, .open-time-header{
     color: inherit;
     display: flex;
     align-items: center;
@@ -40,6 +51,12 @@
     place-content: center;
     background-color: var(--greyish-shading);
 }
+.open-time-details{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 .2rem 3rem;
+}
+
 .contact-form{
     margin-bottom: 2rem;
 }
@@ -64,7 +81,7 @@
 }
 .form-input input[type="text"]::placeholder, .form-input input[type="email"]::placeholder, textarea::placeholder{
     font-weight: 400;
-    text-transform: lowercase;
+    text-transform:none;
 }
 input[type="submit"]{
     width: 100%;
