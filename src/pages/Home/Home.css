@@ -1,0 +1,27 @@
+.hero-section{
+    display: grid;
+    place-content: center;
+    height: 80vh;
+    background-image: url("/src/assets/canopy.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section-text h1{
+    text-transform: capitalize;
+    font-size: 50px;
+    text-align: center;
+    color: var(--primary-color);
+}
+.section-cta{
+    margin-top: 3rem;
+    display: grid;
+    place-content: center;
+}
+.section-cta a{
+    padding: .5rem .8rem;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 1px solid grey;
+}

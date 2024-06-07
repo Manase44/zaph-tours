@@ -1,0 +1,30 @@
+header{
+    position:fixed;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    
+}
+.header-logo a{
+    color: var(--primary-color);
+}
+.header-nav-links{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+
+}
+.header-nav-link-item a{
+    text-transform: capitalize;
+    color: var(--primary-color);
+    font-size: 14px;
+}
+
+@media screen and (max-width:576px){
+    header{
+        flex-direction: column;
+    }
+}
