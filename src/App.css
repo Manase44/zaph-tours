@@ -8,7 +8,12 @@
 :root{
   --primary-font:"Poppins", sans-serif;
   --secondary-font:"Dancing Script", cursive;
+  --shadow:0 2px 4px 0 rgba(50, 50, 93, .2);
+  --button-radius:7px;
   --primary-color:#fff;
+  --greyish-shading:#f6f6f6;
+  --border-shading:#a19f9f;
+  --light-shading:#757575;
 }
 html, body{
   overflow-x: hidden;
@@ -22,7 +27,7 @@ a{
   text-align: center;
   color: #000;
   font-size: 35px;
-  padding: 1rem 0;
+  padding: .7rem 0;
 }
 .section-subtitle{
   text-align: center;

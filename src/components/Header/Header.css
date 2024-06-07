@@ -3,10 +3,10 @@ header{
     top: 0;
     width: 100vw;
     display: flex;
+    z-index: 200;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem;
-    
+    padding: 1rem 1.5rem;    
 }
 .header-logo a{
     color: var(--primary-color);
