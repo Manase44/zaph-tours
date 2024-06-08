@@ -2,7 +2,7 @@
     display: grid;
     place-content: center;
     height: 80vh;
-    background-image: url("/src/assets/canopy.jpg");
+    background-image:linear-gradient(to right,rgba(165, 225, 253, 0.8), rgba(0,0,0,.3)), url("/src/assets/hero.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -24,4 +24,26 @@
     color: var(--primary-color);
     background-color: transparent;
     border: 1px solid grey;
+}
+
+
+.featured-destination-section {
+    height: 100vh;
+    background-color: #f6e9b2;
+}
+
+
+.testimonials-ection {
+    height: 80vh;
+
+}
+
+.about-section {
+    height: 100vh;
+}
+
+
+.newsletter-section {
+    background-color: #EEF5FF;
+    height: 80vh;
 }

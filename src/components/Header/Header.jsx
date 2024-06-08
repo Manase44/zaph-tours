@@ -1,9 +1,12 @@
 import './Header.css'
 import logo from '../../assets/Logo.png'
 import { Link } from 'react-router-dom'
-const Header = () => {
+const Header = ({Path}) => {
+
+  console.log(typeof(Path))
+  
   return (
-    <header>
+    <header style={{backgroundColor:`${Path  !== "/" && "#38419D"} `}}>
         <div className="header-logo">
             <Link to={"/"}>
             <h1>Zaph Tours</h1>

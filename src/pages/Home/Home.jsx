@@ -6,6 +6,8 @@ import Newsletter from './Newsletter'
 import Testimonials from './Testimonials'
 
 const Home = () => {
+ 
+
   return (
     <div>
         <Hero/>

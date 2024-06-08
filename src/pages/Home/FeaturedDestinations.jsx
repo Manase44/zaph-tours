@@ -1,6 +1,6 @@
 const FeaturedDestinations = () => {
   return (
-    <section id="featuresDestination" className="featured-destination-section">
+    <section style={{}} id="featuresDestination" className="featured-destination-section">
       <h1 className="section-title">
             out featured destinations
         </h1>
