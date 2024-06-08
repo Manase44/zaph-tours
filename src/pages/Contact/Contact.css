@@ -83,7 +83,7 @@
     font-weight: 400;
     text-transform:none;
 }
-input[type="submit"]{
+.form-submit input[type="submit"]{
     width: 100%;
     padding: .5rem 0;
     font-size: 17px;

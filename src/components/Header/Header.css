@@ -5,9 +5,13 @@ header{
     display: flex;
     z-index: 200;
     justify-content: space-between;
-    /* background-color: aqua; */
     align-items: center;
-    padding: 1rem 1.5rem;    
+    opacity: .8;
+    padding: 1rem 1.5rem;  
+    transition: all .5s;  
+}
+.scrolled-header{
+    background-color: #294B29;
 }
 .header-logo a{
     color: var(--primary-color);

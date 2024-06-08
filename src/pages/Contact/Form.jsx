@@ -42,7 +42,7 @@ const Form = () => {
             required
           ></textarea>
         </div>
-        <div className="">
+        <div className="form-submit">
           <input type="submit" value="Send Message" />
         </div>
       </form>

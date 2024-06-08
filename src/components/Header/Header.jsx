@@ -2,11 +2,17 @@ import './Header.css'
 import logo from '../../assets/Logo.png'
 import { Link } from 'react-router-dom'
 const Header = ({Path}) => {
-
-  console.log(typeof(Path))
+  const header = document.getElementById("header")
+  document.addEventListener('scroll',() => {
+    if (window.screenY>0) {
+      header.classList.add('scrolled-header')
+    }else{
+      header.classList.remove('scrolled-header');
+    }
+  })
   
   return (
-    <header style={{backgroundColor:`${Path  !== "/" && "#38419D"} `}}>
+    <header id='header' style={{backgroundColor:`${Path  !== "/" && "#294B29"} `}} className=''>
         <div className="header-logo">
             <Link to={"/"}>
             <h1>Zaph Tours</h1>

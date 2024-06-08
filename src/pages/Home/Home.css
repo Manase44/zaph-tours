@@ -2,10 +2,11 @@
     display: grid;
     place-content: center;
     height: 80vh;
-    background-image:linear-gradient(to right,rgba(165, 225, 253, 0.8), rgba(0,0,0,.3)), url("/src/assets/hero.jpg");
+    background-image:linear-gradient(to right,rgba(0, 0, 0, 0.6), rgba(0,0,0,.3)), url("/src/assets/Vehicle-Kenya-3.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 .section-text h1{
     text-transform: capitalize;
@@ -34,16 +35,72 @@
 
 
 .testimonials-ection {
-    height: 80vh;
+    background-image: url();
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
+.about-section{
+    margin:1.4rem 0;
+}
+.about-section-content{
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.about-image-styling{
+    --gap:1rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: var(--gap);
+}
+.col1, .col2{
+    display: grid;
+    gap: var(--gap);
 
-.about-section {
-    height: 100vh;
+}
+.col2{
+    transform: translateY(-2rem);
+}
+.col-pic{
+    width: 7rem;
+    height: 10rem;
+    overflow: hidden;
 }
 
-
+.col-pic img{
+    object-fit: cover;
+    width: 100%;
+   height: 100%;
+   transition: all .5s;
+}
+.col-pic img:hover{
+    scale: .8;
+}
+.about-text{
+    width: 40vw;
+}
+.about-text p{
+    padding:.5rem 0;
+   text-align: center;
+   font-size: 14px;
+   line-height: 1.5rem;
+}
 .newsletter-section {
-    background-color: #EEF5FF;
-    height: 80vh;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .about-section-content{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .about-text{
+        width: 90vw;
+    }
 }

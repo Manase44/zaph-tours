@@ -34,3 +34,8 @@ a{
   letter-spacing: 2px;
   text-transform: capitalize;
 }
+.card{
+  border-radius: var(--button-radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
