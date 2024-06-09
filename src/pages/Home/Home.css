@@ -40,7 +40,7 @@
 
 .featured-destination-section, .empty {
   background-image: url("../../assets/background.jpg");
-  background-color: #294b29;
+  background-color: var(--border-shading);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;

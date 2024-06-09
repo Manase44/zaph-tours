@@ -5,6 +5,7 @@ import oldonyo from "../assets/destinations/destination3.jpg";
 import longonot from "../assets/destinations/destination6.jpg";
 import diani from "../assets/destinations/destination5.jpg";
 import accacia from "../assets/destinations/destination7.jpg";
+import naivasha from "../assets/destinations/destination8.jpg";
 
 const destinations = [
   {
@@ -63,5 +64,13 @@ const destinations = [
     groupPrice: 17000,
     individualPrice: 2500,
   },
+  {
+    name: "lake naivasha",
+    image: naivasha,
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptate deleniti autem consequatur quis consequuntur quas reprehenderit quidem quae est, perferendis quaerat illo eveniet eaque odit quibusdam recusandae temporibus magnam tenetur libero harum illum neque! ",
+    groupPrice: 17000,
+    individualPrice: 2500,
+  }
 ];
 export default destinations;
