@@ -1,190 +1,217 @@
-.hero-section{
-    display: grid;
-    place-content: center;
-    height: 80vh;
-    background-image:linear-gradient(to right,rgba(0, 0, 0, 0.6), rgba(0,0,0,.3)), url("/src/assets/Vehicle-Kenya-3.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+.hero-section {
+  display: grid;
+  place-content: center;
+  height: 80vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("/src/assets/Vehicle-Kenya-3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
-.section-text h1{
-    text-transform: capitalize;
-    font-size: 50px;
-    text-align: center;
-    color: var(--primary-color);
+.section-text h1 {
+  text-transform: capitalize;
+  font-size: 50px;
+  text-align: center;
+  color: var(--primary-color);
 }
-.section-cta{
-    margin-top: 3rem;
-    display: grid;
-    place-content: center;
+.section-cta {
+  margin-top: 3rem;
+  display: grid;
+  place-content: center;
 }
-.section-cta a{
-    padding: .5rem .8rem;
-    text-transform: capitalize;
-    color: var(--primary-color);
-    background-color: transparent;
-    border: 1px solid grey;
+.section-cta a {
+  padding: 0.5rem 0.8rem;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  background-color: transparent;
+  border: 1px solid grey;
 }
-
 
 .featured-destination-section {
-    /* background-image: url("../../assets/background.jpg"); */
-    background-color: #294B29;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
+  /* background-image: url("../../assets/background.jpg"); */
+  background-color: #294b29;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.featured-destination-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 0;
+.featured-destination-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
 }
-.featured-destination-card{
-    border-radius: var(--ra);
-    position: relative;
+.featured-destination-card {
+  border-radius: var(--ra);
+  position: relative;
 }
-.card-image{
-    overflow: hidden;
-    height: 13rem;
-    width: 17rem;
+.card-image {
+  overflow: hidden;
+  height: 13rem;
+  width: 17rem;
 }
-.card-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all .5s;
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s;
 }
-.card-image img:hover{
-    scale: 1.3;
+.card-image img:hover {
+  scale: 1.3;
 }
-.fdestination-name{
-    position: absolute;
-    left: .3rem;
-    bottom: .2rem;
-    font-weight: 600;
-    color: var(--primary-color);
-    text-transform: uppercase;
-    font-size: 16px;
+.fdestination-name {
+  position: absolute;
+  left: 0.3rem;
+  bottom: 0.2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-size: 16px;
 }
-.testimonials-content{
-    padding: 0 1.5rem;
-    columns:3;
+.testimonials-content {
+  padding: 0 1.5rem;
+  columns: 3;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.testimony-card {
+  box-shadow: var(--shadow);
+  border-radius: var(--button-radius);
+  margin-bottom: 1rem;
+  padding: 0.4rem 1rem;
+  break-inside: avoid;
+}
+.testimony-card-header {
+  display: flex;
+  gap: 0.9rem;
+}
+.testimony-card-profile {
+  --size: 3rem;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.testimony-card-profile img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.attestant-name {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.attestant-accupation {
+  font-weight: 500;
+  color: var(--light-shading);
+}
+hr {
+  border: 0.1px solid var(--border-shading);
+  margin: 0.5rem 0;
+}
+.testimony p {
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+.about-section {
+  margin: 1.4rem 0;
+}
+.about-section-content {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.about-image-styling {
+  --gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--gap);
+}
+.col1,
+.col2 {
+  display: grid;
+  gap: var(--gap);
+}
+.col2 {
+  transform: translateY(-2rem);
+}
+.col-pic {
+  width: 7rem;
+  height: 10rem;
+  overflow: hidden;
+}
+
+.col-pic img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+.col-pic img:hover {
+  scale: 0.8;
+}
+.about-text {
+  width: 40vw;
+}
+.about-text p {
+  padding: 0.5rem 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+.newletter-input {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+.newletter-input input {
+  padding: 0.3rem 0.4rem;
+  font-size: 17px;
+  outline: none;
+}
+.newletter-input [type="email"] {
+  border: 1px solid var(--border-shading);
+  margin-right: 1rem;
+}
+.newletter-input [type="email"]:focus {
+  border: none;
+  border-bottom: 1px solid var(--border-shading);
+}
+.newletter-input input[type="submit"] {
+  text-transform: capitalize;
+  border: none;
+  cursor: pointer;
+  background-color: #294b29;
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 790px) {
+  .featured-destination-content {
+    flex-direction: column;
+  }
+  .testimonials-content {
+    columns: 2;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about-section-content {
+    flex-direction: column;
     gap: 1rem;
-    margin: 1.5rem 0;
+  }
+  .about-text {
+    width: 90vw;
+  }
 }
-.testimony-card{
-    box-shadow: var(--shadow);
-    border-radius: var(--button-radius);
-    margin-bottom: 1rem;
-    padding: .4rem 1rem;
-    break-inside: avoid;
-}
-.testimony-card-header{
-    display: flex;
-    gap: .9rem;
-}
-.testimony-card-profile{
-    --size:3rem;
-    width: var(--size);
-    height: var(--size);
-    border-radius: 50%;
-    overflow: hidden;
-
-}
-.testimony-card-profile img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-.attestant-name{
-    font-weight: 600;
-    text-transform: capitalize;
-}
-.attestant-accupation{
-    font-weight: 500;
-    color: var(--light-shading);
-}
-hr{
-   border: .1px solid var(--border-shading);
-    margin: .5rem 0;
-}
-.testimony p{
-    text-align: justify;
-}
-.about-section{
-    margin:1.4rem 0;
-}
-.about-section-content{
-    padding-top: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-.about-image-styling{
-    --gap:1rem;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: var(--gap);
-}
-.col1, .col2{
-    display: grid;
-    gap: var(--gap);
-
-}
-.col2{
-    transform: translateY(-2rem);
-}
-.col-pic{
-    width: 7rem;
-    height: 10rem;
-    overflow: hidden;
-}
-
-.col-pic img{
-    object-fit: cover;
-    width: 100%;
-   height: 100%;
-   transition: all .5s;
-}
-.col-pic img:hover{
-    scale: .8;
-}
-.about-text{
-    width: 40vw;
-}
-.about-text p{
-    padding:.5rem 0;
-   text-align: center;
-   font-size: 14px;
-   line-height: 1.5rem;
-}
-.newsletter-section {
-}
-
-
-@media screen and (max-width:790px) {
-    .featured-destination-content{
-        flex-direction: column;
-    }
-    .testimonials-content{
-        columns: 2;
-    }
-}
-@media screen and (max-width:600px) {
-    .about-section-content{
-        flex-direction: column;
-        gap: 1rem;
-    }
-    .about-text{
-        width: 90vw;
-    }
-}
-@media screen and (max-width:576px) {
-    .testimonials-content{
-        columns: 1;
-    }
+@media screen and (max-width: 576px) {
+  .testimonials-content {
+    columns: 1;
+  }
 }

@@ -1,16 +1,16 @@
-import Header from "../../components/Header/Header"
-import pageNotFoundSVG from '../../assets/page_not_found.svg'
-import './Notfound.css'
+import Header from "../../components/Header/Header";
+import pageNotFoundSVG from "../../assets/page_not_found.svg";
+import "./Notfound.css";
 
 const Notfound = () => {
   return (
     <div>
-        <Header/>
-        <div className="page-not-found-section">
+      <Header />
+      <div className="page-not-found-section">
         <img src={pageNotFoundSVG} alt="pae not found" />
-        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Notfound
+export default Notfound;

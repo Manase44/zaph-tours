@@ -1,11 +1,11 @@
-.page-not-found-section{
-    margin-top: 4rem;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+.page-not-found-section {
+  margin-top: 4rem;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
-.page-not-found-section img{
-   width: 50%;
+.page-not-found-section img {
+  width: 50%;
 }

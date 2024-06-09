@@ -16,7 +16,16 @@ const Contact = () => {
           fell free to get in touch with us or follow our socials
         </p>
         <div className="contact-top"></div>
-        <div className="contact-map"></div>
+        <div className="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.32390058087!2d36.68257918098845!3d-1.3032035599073157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1717895113398!5m2!1sen!2ske"
+            width="600"
+            height="450"
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
         <div className="contact-details">
           <div className="contact-socials">
             <h3>follow our socials</h3>
@@ -64,16 +73,16 @@ const Contact = () => {
                   <span>our openning hours:</span>
                 </p>
                 <div className="open-time-details">
-                <p>
-                  <span className="day">Monday to Friday </span>8am to 7pm
-                </p>
-                <p className="closed-day">Closed on Saturday</p>
+                  <p>
+                    <span className="day">Monday to Friday </span>8am to 7pm
+                  </p>
+                  <p className="closed-day">Closed on Saturday</p>
                 </div>
               </div>
             </div>
           </div>
           INCLUDE THE MAP!!!!!!
-          <Form/>
+          <Form />
         </div>
       </div>
     </div>

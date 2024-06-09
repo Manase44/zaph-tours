@@ -1,95 +1,101 @@
-.contact-section{
-    margin-top: 4rem;
-    display: grid;
-    align-items: center;
-    justify-content: center;
+.contact-section {
+  margin-top: 4rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
-.contact-details{
-    margin-top: 1rem;
-    width: 80vw;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+.contact-details {
+  margin-top: 1rem;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
 }
-.contact-socials{
-    padding:.5rem 2rem;
+.contact-socials {
+  padding: 0.5rem 2rem;
 }
-.contact-socials h3{
-    text-transform: capitalize;
-    font-weight: 550;
-    text-align: center;
+.contact-socials h3 {
+  text-transform: capitalize;
+  font-weight: 550;
+  text-align: center;
 }
-.contact-socials-items{
-    padding: .4rem 0;
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
+.contact-socials-items {
+  padding: 0.4rem 0;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
-.social-item{
-    font-size: 30px;
+.social-item {
+  font-size: 30px;
 }
-.contact-addresses{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
+.contact-addresses {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
 }
-.address-item, .open-time-header{
-    color: inherit;
-    display: flex;
-    align-items: center;
-    gap: .5rem;
+.address-item,
+.open-time-header {
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
-.social-item-icon{
-    --size:2.5rem;
-    width: var(--size);
-    height: var(--size);
-    border-radius: 50%;
-    display: grid;
-    place-content: center;
-    background-color: var(--greyish-shading);
+.social-item-icon {
+  --size: 2.5rem;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  background-color: var(--greyish-shading);
 }
-.open-time-details{
-    display: flex;
-    flex-direction: column;
-    padding: 0 0 .2rem 3rem;
+.open-time-details {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0.2rem 3rem;
 }
 
-.contact-form{
-    margin-bottom: 2rem;
+.contact-form {
+  margin-bottom: 2rem;
 }
-.form-input{
-    margin: 1rem auto;
-    display: grid;
+.form-input {
+  margin: 1rem auto;
+  display: grid;
 }
-.form-input label{
-    text-transform: capitalize;
-    color: var( --light-shading);
+.form-input label {
+  text-transform: capitalize;
+  color: var(--light-shading);
 }
-.form-input input[type="text"], .form-input input[type="email"], textarea{
-    padding: .5rem;
-    font-size: 17px;
-    font-weight: 550;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid var(--border-shading);
+.form-input input[type="text"],
+.form-input input[type="email"],
+textarea {
+  padding: 0.5rem;
+  font-size: 17px;
+  font-weight: 550;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--border-shading);
 }
-.form-input input[type="text"],textarea{
-    text-transform: capitalize;
+.form-input input[type="text"],
+textarea {
+  text-transform: capitalize;
 }
-.form-input input[type="text"]::placeholder, .form-input input[type="email"]::placeholder, textarea::placeholder{
-    font-weight: 400;
-    text-transform:none;
+.form-input input[type="text"]::placeholder,
+.form-input input[type="email"]::placeholder,
+textarea::placeholder {
+  font-weight: 400;
+  text-transform: none;
 }
-.form-submit input[type="submit"]{
-    width: 100%;
-    padding: .5rem 0;
-    font-size: 17px;
-    font-weight: 550;
-    border: none;
-    box-shadow: var(--shadow);
-    cursor: pointer;
-    border-radius: var(--button-radius);
+.form-submit input[type="submit"] {
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 17px;
+  font-weight: 550;
+  border: none;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  border-radius: var(--button-radius);
 }
