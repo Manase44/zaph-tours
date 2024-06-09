@@ -1,4 +1,9 @@
-import saltlick from "../assets/destinations/saltlick.jpg";
+import saltlick from "../assets/destinations/destination4.jpg";
+import hemingways from "../assets/destinations/destination1.jpg";
+import tsavo from "../assets/destinations/destination2.jpg";
+import oldonyo from "../assets/destinations/destination3.jpg";
+// import saltlick from "../assets/destinations/destination6.jpg";
+// import saltlick from "../assets/destinations/destination5.jpg";
 const destinations = [
   {
     name: "salt lick safari lodge",
@@ -10,7 +15,7 @@ const destinations = [
   },
   {
     name: "tsavo national park",
-    image: saltlick,
+    image: tsavo,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptate deleniti autem consequatur quis consequuntur quas reprehenderit quidem quae est, perferendis quaerat illo eveniet eaque odit quibusdam recusandae temporibus magnam tenetur libero harum illum neque! ",
     groupPrice: 50000,
@@ -18,7 +23,7 @@ const destinations = [
   },
   {
     name: "hemingways hotel",
-    image: saltlick,
+    image: hemingways,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptate deleniti autem consequatur quis consequuntur quas reprehenderit quidem quae est, perferendis quaerat illo eveniet eaque odit quibusdam recusandae temporibus magnam tenetur libero harum illum neque! ",
     groupPrice: 100000,
@@ -34,7 +39,7 @@ const destinations = [
   },
   {
     name: "ol donyo sabuk",
-    image: saltlick,
+    image: oldonyo,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptate deleniti autem consequatur quis consequuntur quas reprehenderit quidem quae est, perferendis quaerat illo eveniet eaque odit quibusdam recusandae temporibus magnam tenetur libero harum illum neque! ",
     groupPrice: 10000,

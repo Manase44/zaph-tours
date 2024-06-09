@@ -2,14 +2,14 @@ import "./Header.css";
 import logo from "../../assets/Logo.png";
 import { Link } from "react-router-dom";
 const Header = ({ Path }) => {
-  const header = document.getElementById("header");
-  document.addEventListener("scroll", () => {
-    if (window.screenY > 0) {
-      header.classList.add("scrolled-header");
-    } else {
-      header.classList.remove("scrolled-header");
-    }
-  });
+  // const header = document.getElementById("header");
+  // document.addEventListener("scroll", () => {
+  //   if (window.screenY > 0) {
+  //     header.classList.add("scrolled-header");
+  //   } else {
+  //     header.classList.remove("scrolled-header");
+  //   }
+  // });
 
   return (
     <header

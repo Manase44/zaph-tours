@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
@@ -6,11 +5,9 @@ import Destinations from "./pages/Destinations/Destinations";
 import Trips from "./pages/Trip-Types/Trips";
 import Contact from "./pages/Contact/Contact";
 import Notfound from "./pages/NotFound/Notfound";
-import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-function App() {
-  const [count, setCount] = useState(0);
 
+function App() {
   return (
     <>
       <BrowserRouter>
