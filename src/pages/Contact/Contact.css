@@ -50,7 +50,6 @@
   background-color: var(--primary-color);
 }
 .contact-addresses:hover{
- 
   color: var(--primary-color);
   background-color: var(--secondary-color);
   
@@ -134,8 +133,10 @@ textarea::placeholder {
   .contact-details{
     grid-template-columns: repeat(1,1fr);
   }
+  .contact-socials {
+    padding: 0.5rem 0;
+  }
   .contact-addresses {
-    /* align-items: center; */
     gap: 1rem;
   }
 }
