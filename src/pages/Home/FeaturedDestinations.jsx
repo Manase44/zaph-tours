@@ -19,8 +19,12 @@ const FeaturedDestinations = () => {
                   src={currentFDestination.image}
                   alt="feature destination"
                 />
+                 <div className="fdestination-name">
+              <p >{currentFDestination.name}</p>
               </div>
-              <p className="fdestination-name">{currentFDestination.name}</p>
+              </div>
+             
+              
             </div>
           );
         })}

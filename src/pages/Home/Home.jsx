@@ -12,7 +12,11 @@ const Home = () => {
       <About />
       <FeaturedDestinations />
       <Testimonials />
+      <div className="empty">
+        
+      </div>
       <Newsletter />
+      
     </div>
   );
 };
