@@ -31,7 +31,7 @@ const Destinations = () => {
                     Individual price: Ksh {currentDestination.individualPrice}
                   </p>
                 </div>
-                <a href="#" className="destination-more-link view-more-button">
+                <a href="#" className="destination-more-link more-details">
                   more details
                 </a>
               </div>

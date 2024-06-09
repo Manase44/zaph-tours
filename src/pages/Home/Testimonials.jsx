@@ -21,7 +21,7 @@ const Testimonials = () => {
                   </p>
                 </div>
               </div>
-              <hr className="line" />
+              {/* <hr className="line" /> */}
               <div className="testimony">
                 <p>{currentTestimony.testimony}</p>
               </div>

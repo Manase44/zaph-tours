@@ -88,7 +88,11 @@
 }
 .testimony-card-header {
   display: flex;
+  align-items: center;
   gap: 0.9rem;
+  padding-bottom:.4rem;
+  border-bottom: 1px solid var(--border-shading);
+  margin-bottom: .3rem;
 }
 .testimony-card-profile {
   --size: 3rem;
@@ -109,10 +113,6 @@
 .attestant-accupation {
   font-weight: 500;
   color: var(--light-shading);
-}
-hr {
-  border: 0.1px solid var(--border-shading);
-  margin: 0.5rem 0;
 }
 .testimony p {
   text-align: justify;
