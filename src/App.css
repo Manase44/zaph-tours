@@ -41,8 +41,3 @@ a {
   box-shadow: var(--shadow);
   overflow: hidden;
 }
-.image-load-placeholder{
-  background-color: grey;
-  width: 100%;
-  height: 100%;
-}
