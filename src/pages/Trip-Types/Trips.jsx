@@ -1,8 +1,28 @@
 import Header from "../../components/Header/Header";
 import "./Trips.css";
 import tripsData from "../../data/tripsData.js";
+import { useState, useRef, useEffect } from "react";
 
 const Trips = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const imageRef = useRef(null)
+
+  useEffect (packageIndex => {
+    if (imageRef.current) {
+      console.log(tripsData[packageIndex])
+      setIsLoading(false)
+    }else{
+      setIsLoading(true)
+    }
+  })
+  // console.log("loading is true")
+  // const handleLazyLoading = () => {
+  //   setIsLoading(false)
+  //   console.log("loading set to false")
+  // }
+
+
   return (
     <div>
       <Header />
@@ -25,12 +45,25 @@ const Trips = () => {
                     return (
                       <div key={i} className="package-gallery-card card">
                         <div className="package-gallery-card-image">
-                          <img src={currentCard.image} alt="package gallery" />
+                        <img
+                              src={currentCard.image}
+                              alt="package gallery"
+                              ref={imageRef}
+                              // onLoad={handleLazyLoading}
+                            />
+                          {/* {isLoading ? (
+                            <div className="image-placeholder"></div>
+                          ) : (
+                            <img
+                              src={currentCard.image}
+                              alt="package gallery"
+                              // ref={imageRef}
+                              onLoad={handleLazyLoading}
+                            />
+                          )} */}
                         </div>
                         <div className="package-gallery-card-details">
-                          <p className="card-name">
-                            {currentCard.name}
-                          </p>
+                          <p className="card-name">{currentCard.name}</p>
                           <p className="card-description">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Illum veniam in voluptatibus animi, neque illo

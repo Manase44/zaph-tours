@@ -23,10 +23,19 @@
   margin: 0.8rem 0;
 }
 .package-gallery-card-image{
+  width: 320px;
+  height: 220px;
   overflow: hidden;
+}
+.image-placeholder{
+  background-color: var(--border-shading);
+  height: 100%;
+  width: 100%;
+  transition: all .5s;
 }
 .package-gallery-card-image img {
   width: 100%;
+  height: 100%;
   transition: all .5s;
 }
 .package-gallery-card-image img:hover {
