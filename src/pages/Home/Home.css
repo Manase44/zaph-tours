@@ -29,18 +29,90 @@
 
 
 .featured-destination-section {
-    height: 100vh;
-    background-color: #f6e9b2;
-}
-
-
-.testimonials-ection {
-    background-image: url();
+    /* background-image: url("../../assets/background.jpg"); */
+    background-color: #294B29;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+}
+.featured-destination-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+.featured-destination-card{
+    border-radius: var(--ra);
+    position: relative;
+}
+.card-image{
+    overflow: hidden;
+    height: 13rem;
+    width: 17rem;
+}
+.card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .5s;
+}
+.card-image img:hover{
+    scale: 1.3;
+}
+.fdestination-name{
+    position: absolute;
+    left: .3rem;
+    bottom: .2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.testimonials-content{
+    padding: 0 1.5rem;
+    columns:3;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+.testimony-card{
+    box-shadow: var(--shadow);
+    border-radius: var(--button-radius);
+    margin-bottom: 1rem;
+    padding: .4rem 1rem;
+    break-inside: avoid;
+}
+.testimony-card-header{
+    display: flex;
+    gap: .9rem;
+}
+.testimony-card-profile{
+    --size:3rem;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    overflow: hidden;
 
+}
+.testimony-card-profile img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.attestant-name{
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.attestant-accupation{
+    font-weight: 500;
+    color: var(--light-shading);
+}
+hr{
+   border: .1px solid var(--border-shading);
+    margin: .5rem 0;
+}
+.testimony p{
+    text-align: justify;
 }
 .about-section{
     margin:1.4rem 0;
@@ -94,7 +166,14 @@
 }
 
 
-
+@media screen and (max-width:790px) {
+    .featured-destination-content{
+        flex-direction: column;
+    }
+    .testimonials-content{
+        columns: 2;
+    }
+}
 @media screen and (max-width:600px) {
     .about-section-content{
         flex-direction: column;
@@ -102,5 +181,10 @@
     }
     .about-text{
         width: 90vw;
+    }
+}
+@media screen and (max-width:576px) {
+    .testimonials-content{
+        columns: 1;
     }
 }
