@@ -51,6 +51,7 @@
 }
 .featured-destination-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
@@ -80,11 +81,7 @@
   background-color: var(--secondary-color);
   padding: .6rem;
   bottom: 0;
-  /* transform:translateX(100%); */
 }
-/* .card-image img:hover .fdestination-name{
-  transform: none;
-} */
 .fdestination-name p{
   font-weight: 600;
   color: var(--primary-color);
@@ -229,9 +226,6 @@
   height: 2rem;
 }
 @media screen and (max-width: 790px) {
-  .featured-destination-content {
-    flex-direction: column;
-  }
   .testimonials-content {
     columns: 2;
   }

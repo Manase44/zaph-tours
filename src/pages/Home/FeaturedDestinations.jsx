@@ -13,7 +13,7 @@ const FeaturedDestinations = () => {
       <div className="featured-destination-content">
         {featuredDestinations.map((currentFDestination, i) => {
           return (
-            <div className="featured-destination-card">
+            <div key={i} className="featured-destination-card">
               <div className="card-image">
                 <img
                   src={currentFDestination.image}

@@ -127,6 +127,13 @@ textarea::placeholder {
   background-color: var(--secondary-color);
   color: var(--primary-color);
   border-radius: var(--button-radius);
+  transition: all .3s;
+}
+.form-submit input[type="submit"]:hover{
+  border: 1px solid var(--secondary-color);
+  background-color: var(--primary-color);
+  color: inherit;
+
 }
 
 @media screen and (max-width:650px) {
