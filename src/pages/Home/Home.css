@@ -172,6 +172,12 @@
   display: flex;
   justify-content: center;
 }
+.newsletter-form{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1rem;
+  width: 60%;
+}
 .newletter-input input {
   padding: 0.3rem 0.4rem;
   font-size: 17px;
@@ -179,7 +185,6 @@
 }
 .newletter-input [type="email"] {
   border: 1px solid var(--border-shading);
-  margin-right: 1rem;
 }
 .newletter-input [type="email"]:focus {
   border: none;
@@ -213,5 +218,10 @@
 @media screen and (max-width: 576px) {
   .testimonials-content {
     columns: 1;
+  }
+  .newsletter-form{
+    grid-template-columns: none;
+    gap: .5rem;
+    width: 90%;
   }
 }

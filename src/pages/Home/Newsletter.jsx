@@ -7,7 +7,7 @@ const Newsletter = () => {
         activities.
       </p>
       <div className="newletter-input">
-        <form action="">
+        <form action="" className="newsletter-form">
           <input
             type="email"
             name="letterEmail"
