@@ -16,7 +16,7 @@ const Destinations = () => {
           {destinationsData.map((currentDestination, i) => {
             return (
               <div key={i} className="destination-item card">
-                <div className="destination-image" >
+                <div className="destination-image">
                   <img src={currentDestination.image} alt="destination image" />
                 </div>
                 <div className="destination-details">

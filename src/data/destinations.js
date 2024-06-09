@@ -71,6 +71,6 @@ const destinations = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptate deleniti autem consequatur quis consequuntur quas reprehenderit quidem quae est, perferendis quaerat illo eveniet eaque odit quibusdam recusandae temporibus magnam tenetur libero harum illum neque! ",
     groupPrice: 17000,
     individualPrice: 2500,
-  }
+  },
 ];
 export default destinations;

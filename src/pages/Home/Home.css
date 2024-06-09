@@ -24,21 +24,22 @@
   place-content: center;
 }
 .section-cta a {
-  background-color:transparent;
+  background-color: transparent;
   padding: 0.5rem 0.8rem;
   text-transform: capitalize;
   font-weight: 550;
   color: var(--primary-color);
-  transition: all .3s;
+  transition: all 0.3s;
   border: 1.5px solid var(--secondary-color);
   border-radius: var(--button-radius);
 }
-.section-cta a:hover{
+.section-cta a:hover {
   background-color: var(--secondary-color);
-  border:none;
+  border: none;
 }
 
-.featured-destination-section, .empty {
+.featured-destination-section,
+.empty {
   background-image: url("../../assets/background.jpg");
   background-color: var(--border-shading);
   background-position: center;
@@ -46,7 +47,8 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-.featured-destination-section .section-title, .featured-destination-section .section-subtitle {
+.featured-destination-section .section-title,
+.featured-destination-section .section-subtitle {
   color: var(--primary-color);
 }
 .featured-destination-content {
@@ -77,12 +79,12 @@
 
 .fdestination-name {
   position: absolute;
-  width:100%;
+  width: 100%;
   background-color: var(--secondary-color);
-  padding: .6rem;
+  padding: 0.6rem;
   bottom: 0;
 }
-.fdestination-name p{
+.fdestination-name p {
   font-weight: 600;
   color: var(--primary-color);
   text-transform: uppercase;
@@ -105,9 +107,9 @@
   display: flex;
   align-items: center;
   gap: 0.9rem;
-  padding-bottom:.4rem;
+  padding-bottom: 0.4rem;
   border-bottom: 1px solid var(--border-shading);
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
 }
 .testimony-card-profile {
   --size: 3rem;
@@ -162,7 +164,6 @@
   width: 7rem;
   height: 10rem;
   overflow: hidden;
-  
 }
 
 .col-pic img {
@@ -190,7 +191,7 @@
   display: flex;
   justify-content: center;
 }
-.newsletter-form{
+.newsletter-form {
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 1rem;
@@ -216,12 +217,12 @@
   color: var(--primary-color);
   border-radius: var(--button-radius);
 }
-.newletter-input input[type="submit"]:hover{
+.newletter-input input[type="submit"]:hover {
   background-color: var(--primary-color);
   border: 1px solid var(--secondary-color);
   color: inherit;
 }
-.empty{
+.empty {
   width: 100vw;
   height: 2rem;
 }
@@ -243,9 +244,9 @@
   .testimonials-content {
     columns: 1;
   }
-  .newsletter-form{
+  .newsletter-form {
     grid-template-columns: none;
-    gap: .5rem;
+    gap: 0.5rem;
     width: 90%;
   }
 }

@@ -6,22 +6,21 @@ import { useState, useRef, useEffect } from "react";
 const Trips = () => {
   const [isLoading, setIsLoading] = useState(true);
 
-  const imageRef = useRef(null)
+  const imageRef = useRef(null);
 
-  useEffect (packageIndex => {
+  useEffect((packageIndex) => {
     if (imageRef.current) {
-      console.log(tripsData[packageIndex])
-      setIsLoading(false)
-    }else{
-      setIsLoading(true)
+      console.log(tripsData[packageIndex]);
+      setIsLoading(false);
+    } else {
+      setIsLoading(true);
     }
-  })
+  });
   // console.log("loading is true")
   // const handleLazyLoading = () => {
   //   setIsLoading(false)
   //   console.log("loading set to false")
   // }
-
 
   return (
     <div>
@@ -45,12 +44,12 @@ const Trips = () => {
                     return (
                       <div key={i} className="package-gallery-card card">
                         <div className="package-gallery-card-image">
-                        <img
-                              src={currentCard.image}
-                              alt="package gallery"
-                              ref={imageRef}
-                              // onLoad={handleLazyLoading}
-                            />
+                          <img
+                            src={currentCard.image}
+                            alt="package gallery"
+                            ref={imageRef}
+                            // onLoad={handleLazyLoading}
+                          />
                           {/* {isLoading ? (
                             <div className="image-placeholder"></div>
                           ) : (

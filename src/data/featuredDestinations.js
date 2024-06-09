@@ -29,7 +29,7 @@ const featuredDestinations = [
   {
     image: fdestination6,
     name: "Coastal Kenya",
-  }
+  },
 ];
 
 export default featuredDestinations;

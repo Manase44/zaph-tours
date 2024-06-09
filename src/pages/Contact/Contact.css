@@ -1,7 +1,7 @@
 .contact-section {
   margin-top: 4rem;
 }
-.contact-section-content{
+.contact-section-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,14 +14,15 @@
   align-items: center;
   transform: translateY(4rem);
 }
-.contact-map iframe{
+.contact-map iframe {
   width: 90vw;
   border: none;
 }
 .contact-socials {
   padding: 0.5rem 2rem;
 }
-.contact-socials h3, .contact-form h3 {
+.contact-socials h3,
+.contact-form h3 {
   text-transform: capitalize;
   font-weight: 550;
   text-align: center;
@@ -43,16 +44,15 @@
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  transition: all .5s;
+  transition: all 0.5s;
   border: 1px solid var(--secondary-color);
   border-radius: var(--button-radius);
   padding: 0.7rem 1rem;
   background-color: var(--primary-color);
 }
-.contact-addresses:hover{
+.contact-addresses:hover {
   color: var(--primary-color);
   background-color: var(--secondary-color);
-  
 }
 .address-item,
 .open-time-header {
@@ -61,7 +61,7 @@
   align-items: center;
   gap: 0.5rem;
 }
-.open-time-header span{
+.open-time-header span {
   text-transform: capitalize;
 }
 .social-item-icon {
@@ -73,7 +73,7 @@
   place-content: center;
   background-color: var(--greyish-shading);
   color: var(--secondary-color);
-    font-size: 19px;
+  font-size: 19px;
 }
 .open-time-details {
   display: flex;
@@ -89,7 +89,7 @@
   text-transform: capitalize;
   font-weight: 550;
   color: var(--light-shading);
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
 }
 .form-input input[type="text"],
 .form-input input[type="email"],
@@ -127,18 +127,17 @@ textarea::placeholder {
   background-color: var(--secondary-color);
   color: var(--primary-color);
   border-radius: var(--button-radius);
-  transition: all .3s;
+  transition: all 0.3s;
 }
-.form-submit input[type="submit"]:hover{
+.form-submit input[type="submit"]:hover {
   border: 1px solid var(--secondary-color);
   background-color: var(--primary-color);
   color: inherit;
-
 }
 
-@media screen and (max-width:650px) {
-  .contact-details{
-    grid-template-columns: repeat(1,1fr);
+@media screen and (max-width: 650px) {
+  .contact-details {
+    grid-template-columns: repeat(1, 1fr);
   }
   .contact-socials {
     padding: 0.5rem 0;
