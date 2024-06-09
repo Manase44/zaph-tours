@@ -1,7 +1,6 @@
 import Header from "../../components/Header/Header";
 import "./Destinations.css";
 import destinationsData from "../../data/destinations.js";
-import LazyImageObserver from "../../components/LazyLoad/LazyImageObserver.jsx";
 
 const Destinations = () => {
   return (
@@ -18,7 +17,7 @@ const Destinations = () => {
             return (
               <div key={i} className="destination-item card">
                 <div className="destination-image" >
-                  <LazyImageObserver source={currentDestination.image} alt="dstination image"/>
+                  <img src={currentDestination.image} alt="destination image" />
                 </div>
                 <div className="destination-details">
                   <p className="destination-name">{currentDestination.name}</p>
