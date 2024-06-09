@@ -1,6 +1,7 @@
 const Form = () => {
   return (
     <div className="contact-form">
+      <h3>send us a message</h3>
       <form action="#" className="form">
         <div className="form-input">
           <label htmlFor="contactName">full name</label>

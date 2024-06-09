@@ -6,6 +6,7 @@
 }
 .trip-package {
   display: grid;
+  margin-bottom: 2rem;
 }
 .package-header {
   display: flex;
@@ -21,8 +22,15 @@
   gap: 2rem;
   margin: 0.8rem 0;
 }
+.package-gallery-card-image{
+  overflow: hidden;
+}
 .package-gallery-card-image img {
   width: 100%;
+  transition: all .5s;
+}
+.package-gallery-card-image img:hover {
+  scale: 1.3;
 }
 .package-gallery-card-details {
   padding: 1rem;
@@ -43,14 +51,20 @@
 }
 
 .view-more-button {
-  background-color: #38419d;
+  background-color:var(--secondary-color);
   border-radius: var(--button-radius);
-  padding: 3px 6px;
-  color: white;
+  padding: .3rem .6rem;
+  color: var(--primary-color);
   text-decoration: none;
   width: fit-content;
-  font-weight: 300;
-  font-size: small;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all .5s;
+}
+.view-more-button:hover{
+  background-color: var(--primary-color);
+  color: inherit;
+  border: 1px solid var(--secondary-color);
 }
 
 .card-price {

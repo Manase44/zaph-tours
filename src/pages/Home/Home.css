@@ -11,7 +11,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* background-attachment: fixed; */
 }
 .section-text h1 {
   text-transform: capitalize;
@@ -47,7 +46,6 @@
   padding: 2rem 0;
 }
 .featured-destination-card {
-  border-radius: var(--ra);
   position: relative;
 }
 .card-image {
@@ -184,20 +182,25 @@
   outline: none;
 }
 .newletter-input [type="email"] {
-  border: 1px solid var(--border-shading);
+  border: 1px solid var(--secondary-color);
 }
 .newletter-input [type="email"]:focus {
   border: none;
-  border-bottom: 1px solid var(--border-shading);
+  border-bottom: 1px solid var(--secondary-color);
 }
 .newletter-input input[type="submit"] {
   text-transform: capitalize;
   border: none;
   cursor: pointer;
-  background-color: #294b29;
+  background-color: var(--secondary-color);
   color: var(--primary-color);
+  border-radius: var(--button-radius);
 }
-
+.newletter-input input[type="submit"]:hover{
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  color: inherit;
+}
 @media screen and (max-width: 790px) {
   .featured-destination-content {
     flex-direction: column;

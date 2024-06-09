@@ -41,6 +41,7 @@
 .more-details{
   padding: .5rem .5rem;
   background-color: #294b29;
+  border-radius: var(--button-radius);
   margin: 1rem;
   color: var(--primary-color);
   text-transform: capitalize;

@@ -21,7 +21,7 @@
 .contact-socials {
   padding: 0.5rem 2rem;
 }
-.contact-socials h3 {
+.contact-socials h3, .contact-form h3 {
   text-transform: capitalize;
   font-weight: 550;
   text-align: center;
@@ -35,6 +35,7 @@
 }
 .social-item {
   font-size: 30px;
+  color: var(--secondary-color);
 }
 .contact-addresses {
   height: 100%;
@@ -42,6 +43,17 @@
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
+  transition: all .5s;
+  border: 1px solid var(--secondary-color);
+  border-radius: var(--button-radius);
+  padding: 0.7rem 1rem;
+  background-color: var(--primary-color);
+}
+.contact-addresses:hover{
+ 
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  
 }
 .address-item,
 .open-time-header {
@@ -61,6 +73,8 @@
   display: grid;
   place-content: center;
   background-color: var(--greyish-shading);
+  color: var(--secondary-color);
+    font-size: 19px;
 }
 .open-time-details {
   display: flex;
@@ -83,10 +97,15 @@
 textarea {
   padding: 0.5rem;
   font-size: 17px;
-  font-weight: 550;
-  /* border: none; */
+  font-weight: 500;
   outline: none;
-  border: 1px solid var(--border-shading);
+  border: 1px solid var(--secondary-color);
+}
+.form-input input[type="text"]:focus,
+.form-input input[type="email"]:focus,
+textarea:focus {
+  border: none;
+  border-bottom: 1px solid var(--secondary-color);
 }
 .form-input input[type="text"],
 textarea {
@@ -106,6 +125,8 @@ textarea::placeholder {
   border: none;
   box-shadow: var(--shadow);
   cursor: pointer;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   border-radius: var(--button-radius);
 }
 

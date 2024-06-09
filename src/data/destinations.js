@@ -2,8 +2,10 @@ import saltlick from "../assets/destinations/destination4.jpg";
 import hemingways from "../assets/destinations/destination1.jpg";
 import tsavo from "../assets/destinations/destination2.jpg";
 import oldonyo from "../assets/destinations/destination3.jpg";
-// import saltlick from "../assets/destinations/destination6.jpg";
-// import saltlick from "../assets/destinations/destination5.jpg";
+import longonot from "../assets/destinations/destination6.jpg";
+import diani from "../assets/destinations/destination5.jpg";
+import accacia from "../assets/destinations/destination7.jpg";
+
 const destinations = [
   {
     name: "salt lick safari lodge",
@@ -31,11 +33,19 @@ const destinations = [
   },
   {
     name: "mt longonot",
-    image: saltlick,
+    image: longonot,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptate deleniti autem consequatur quis consequuntur quas reprehenderit quidem quae est, perferendis quaerat illo eveniet eaque odit quibusdam recusandae temporibus magnam tenetur libero harum illum neque! ",
     groupPrice: 6000,
     individualPrice: 500,
+  },
+  {
+    name: "diani beach",
+    image: diani,
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptate deleniti autem consequatur quis consequuntur quas reprehenderit quidem quae est, perferendis quaerat illo eveniet eaque odit quibusdam recusandae temporibus magnam tenetur libero harum illum neque! ",
+    groupPrice: 10000,
+    individualPrice: 2000,
   },
   {
     name: "ol donyo sabuk",
@@ -46,8 +56,8 @@ const destinations = [
     individualPrice: 2000,
   },
   {
-    name: "accacia lodge",
-    image: saltlick,
+    name: "acacia lodge",
+    image: accacia,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptate deleniti autem consequatur quis consequuntur quas reprehenderit quidem quae est, perferendis quaerat illo eveniet eaque odit quibusdam recusandae temporibus magnam tenetur libero harum illum neque! ",
     groupPrice: 17000,

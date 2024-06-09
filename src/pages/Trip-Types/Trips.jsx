@@ -2,8 +2,6 @@ import Header from "../../components/Header/Header";
 import "./Trips.css";
 import tripsData from "../../data/tripsData.js";
 
-import { MdHouseSiding } from "react-icons/md";
-
 const Trips = () => {
   return (
     <div>
@@ -31,7 +29,6 @@ const Trips = () => {
                         </div>
                         <div className="package-gallery-card-details">
                           <p className="card-name">
-                            <MdHouseSiding size={20} />
                             {currentCard.name}
                           </p>
                           <p className="card-description">
